@@ -1,0 +1,8 @@
+emoji
+json
+math
+pandas
+numpy
+scikit-learn
+seaborn
+matplotlib
