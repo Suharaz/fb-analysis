@@ -75,7 +75,7 @@ def tien_xu_ly_du_lieu_tin_nhan_thu_muc_mess_ca_nhan(folder_path,ten_fb_cua_ban)
 
                     should_exclude = any(phrase in content.lower() for phrase in excluded_phrases)
 
-                    if all([sender_name, content, timestamp]) and not should_exclude and ten_fb_cua_ban  in sender_name.lower():
+                    if all([sender_name, content, timestamp]) and not should_exclude and ten_fb_cua_ban.lower()  in sender_name.lower():
                         processed_messages.append({
                             "Người gửi": sender_name,
                             "Nội dung": content,
